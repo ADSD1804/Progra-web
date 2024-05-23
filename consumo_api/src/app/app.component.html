@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+<div class="new_category">
+  <button class="btt-agregar" (click)="onSummit()">Nuevo Producto</button> <p></p>
+  <label for="name">Name: 
+  <input class="border" type="text" name="" id="name" [formControl]= "name" >
+  </label>
+  <label for="name">Image: 
+    <input class="border" type="text" name="" id="price" [formControl]= "image" >
+    </label>
+  </div>
+
+<div class="container" *ngFor="let category of categories">
+  <app-card class="cards" [category]="category"></app-card>
+</div>
