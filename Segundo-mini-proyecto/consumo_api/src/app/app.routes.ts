@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CardComponent } from './components/card/card/card.component';
 
 export const routes: Routes = [
-  { path: '', component: CardComponent },
+  { path: 'components/card', component: CardComponent },
   { path: '**', redirectTo: '' }
 ];
 
