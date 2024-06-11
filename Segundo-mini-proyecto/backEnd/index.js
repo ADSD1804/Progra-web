@@ -13,7 +13,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'https://frontend-tkex.onrender.com',
+  origin: 'https://api.render.com/deploy/srv-cpjnm1icn0vc73apgqlg?key=hsk5gCJiKb0',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 }));
