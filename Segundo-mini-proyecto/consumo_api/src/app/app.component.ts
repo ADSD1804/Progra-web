@@ -13,7 +13,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit{
-  apiUrl = 'http://localhost:3000/categories';
+  apiUrl = 'https://backend-nt96.onrender.com';
   title = 'consumo_api';
   categories: any[] = [];
   category: any;
