@@ -12,11 +12,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors({
-  origin: 'https://frontend-tkex.onrender.com',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-}));
+app.use(cors());
 
 const PORT = process.env.PORT || 3000;   
 
